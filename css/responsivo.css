@@ -1,0 +1,649 @@
+
+/* RESPONSIVIDADE - PÁGINA CONTATO */
+
+@media (max-width: 850px) {
+
+    .contato-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contato-header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contato-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 65px 7%;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .contato-hero {
+        min-height: 300px;
+        padding: 50px 20px;
+    }
+
+    .contato-hero h1 {
+        font-size: 36px;
+    }
+
+    .contato-texto h2 {
+        font-size: 34px;
+    }
+
+    .contato-formulario {
+        padding: 25px 18px;
+    }
+
+    .contato-header nav {
+        gap: 14px;
+    }
+
+    .contato-link {
+        margin-top: 5px;
+    }
+
+}
+
+/* =================================
+   RESPONSIVIDADE - PÁGINA INICIAL
+================================= */
+
+@media (max-width: 850px) {
+
+    /* CABEÇALHO E MENU */
+    .cabecalho {
+        position: relative;
+        height: auto;
+        min-height: 85px;
+        padding: 15px 5%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .cabecalho .logo img {
+        width: 150px;
+        max-width: 100%;
+    }
+
+    .cabecalho .menu-btn {
+        display: block;
+        font-size: 27px;
+        cursor: pointer;
+    }
+
+    .cabecalho nav {
+        order: 4;
+        width: 100%;
+    }
+
+    .cabecalho .carrinho {
+        margin-left: 0;
+    }
+
+    .cabecalho .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 0;
+    }
+
+    .cabecalho .menu.aberto {
+        display: flex;
+    }
+
+    /* BANNER PRINCIPAL */
+    .banner {
+        min-height: 500px;
+        padding: 55px 7%;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: clamp(42px, 9vw, 70px);
+        letter-spacing: 4px;
+    }
+
+    /* CATEGORIAS */
+    .categorias {
+        padding: 55px 5%;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    /* NOSSA ESSÊNCIA */
+    .essencia {
+        grid-template-columns: 1fr;
+    }
+
+    .essencia-texto {
+        padding: 55px 7%;
+    }
+
+    .essencia-imagem {
+        min-height: 300px;
+    }
+
+    /* CONTAGEM REGRESSIVA */
+    .contagem {
+        padding: 55px 5%;
+    }
+
+    .contador {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        padding: 40px 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .barra-superior {
+        font-size: 11px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+
+    .cabecalho .logo img {
+        width: 120px;
+    }
+
+    .banner {
+        min-height: 430px;
+        padding: 45px 6%;
+    }
+
+    .banner h1 {
+        font-size: clamp(36px, 11vw, 55px);
+        letter-spacing: 2px;
+    }
+
+    .banner .frase {
+        font-size: 13px;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .essencia-texto h2 {
+        font-size: 32px;
+    }
+
+    .contador {
+        gap: 18px;
+    }
+}
+
+
+/* =================================
+   RESPONSIVIDADE - PÁGINA PRODUTOS
+================================= */
+
+@media (max-width: 850px) {
+
+    /* BANNER DOS PRODUTOS */
+    .produtos-banner {
+        min-height: 400px;
+        padding: 65px 7%;
+        text-align: center;
+        background-position: center;
+    }
+
+    .produtos-banner h1 {
+        font-size: clamp(36px, 6vw, 58px);
+        line-height: 1.15;
+    }
+
+    .produtos-banner p {
+        max-width: 550px;
+        margin: 18px auto 25px;
+        font-size: 15px;
+    }
+
+    /* CATÁLOGO */
+    .catalogo {
+        padding: 60px 6%;
+    }
+
+    .catalogo-titulo {
+        gap: 12px;
+    }
+
+    .catalogo-titulo h2 {
+        font-size: clamp(25px, 4vw, 34px);
+        text-align: center;
+    }
+
+    .catalogo-descricao {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* FILTROS */
+    .filtros {
+        width: 100%;
+        max-width: 600px;
+        margin: 25px auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .filtros input,
+    .filtros select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* FRASE FINAL */
+    .frase-final {
+        padding: 60px 7%;
+        text-align: center;
+    }
+
+    .frase-final h2 {
+        font-size: clamp(28px, 5vw, 40px);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .produtos-banner {
+        min-height: 350px;
+        padding: 50px 6%;
+    }
+
+    .produtos-banner h1 {
+        font-size: clamp(32px, 9vw, 43px);
+    }
+
+    .produtos-banner p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .catalogo {
+        padding: 45px 4%;
+    }
+
+    .catalogo-titulo h2 {
+        font-size: 24px;
+    }
+
+    .catalogo-descricao {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    .quantidade {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .frase-final {
+        padding: 45px 6%;
+    }
+
+    .frase-final h2 {
+        font-size: 29px;
+    }
+
+    .frase-final p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .cabecalho .link-carrinho {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
+/* =================================
+   RESPONSIVIDADE - PÁGINA SOBRE NÓS
+================================= */
+
+@media (max-width: 850px) {
+
+    /* APRESENTAÇÃO E HISTÓRIA */
+    .sobre-hero,
+    .sobre-historia {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .sobre-hero-imagem img,
+    .historia-imagem img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* NOSSA EQUIPE */
+    .equipe {
+        padding: 60px 6%;
+    }
+
+    .equipe-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .equipe-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .equipe-card {
+        min-width: 0;
+    }
+
+    .equipe-avatar {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* CABEÇALHO */
+    .sobre-header {
+        padding: 20px 5%;
+        gap: 15px;
+    }
+
+    .sobre-header nav {
+        gap: 12px 16px;
+        justify-content: center;
+    }
+
+    .sobre-header nav a {
+        font-size: 12px;
+    }
+
+    .sobre-sacola {
+        font-size: 12px;
+    }
+
+    /* APRESENTAÇÃO */
+    .sobre-hero {
+        padding: 45px 6%;
+        gap: 28px;
+    }
+
+    .sobre-hero-texto h1 {
+        font-size: clamp(32px, 9vw, 44px);
+        line-height: 1.2;
+    }
+
+    .sobre-hero-texto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* HISTÓRIA */
+    .sobre-historia {
+        padding: 45px 6%;
+        gap: 28px;
+    }
+
+    .historia-texto h2 {
+        font-size: 30px;
+    }
+
+    .historia-texto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* ESSÊNCIA */
+    .sobre-essencia {
+        padding: 50px 6%;
+    }
+
+    .essencia-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* FRASE FINAL */
+    .sobre-final {
+        padding: 50px 6%;
+    }
+
+    .sobre-final h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    /* EQUIPE */
+    .equipe {
+        padding: 50px 7%;
+    }
+
+    .equipe h2 {
+        font-size: 30px;
+    }
+
+    .equipe-texto {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .equipe-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .equipe-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .equipe-avatar {
+        max-width: 100%;
+    }
+
+    /* RODAPÉ */
+    .sobre-footer {
+        padding: 25px 6%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+/* =================================
+   RESPONSIVIDADE - PÁGINA GALERIA
+================================= */
+
+@media (max-width: 850px) {
+
+    /* BANNER */
+    .galeria-hero {
+        padding: 65px 7%;
+        min-height: 380px;
+        text-align: center;
+        background-position: center;
+    }
+
+    .galeria-hero h1 {
+        font-size: clamp(36px, 6vw, 55px);
+        line-height: 1.2;
+    }
+
+    .galeria-hero p {
+        max-width: 550px;
+        margin: 18px auto;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* FILTROS */
+    .galeria-filtros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    /* IMAGENS */
+    .galeria-item {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .galeria-item img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* FRASE FINAL */
+    .galeria-final {
+        padding: 60px 7%;
+        text-align: center;
+    }
+
+    .galeria-final h2 {
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.2;
+    }
+
+    /* IMAGEM AMPLIADA */
+    .lightbox img {
+        max-width: 90%;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* BANNER */
+    .galeria-hero {
+        min-height: 340px;
+        padding: 50px 6%;
+    }
+
+    .galeria-hero h1 {
+        font-size: clamp(31px, 9vw, 42px);
+    }
+
+    .galeria-hero p {
+        font-size: 13px;
+    }
+
+    .galeria-hero a {
+        font-size: 13px;
+    }
+
+    /* CONTEÚDO */
+    .galeria-conteudo {
+        padding: 45px 5%;
+    }
+
+    .galeria-titulo h2 {
+        font-size: 27px;
+    }
+
+    .galeria-titulo p {
+        font-size: 13px;
+    }
+
+    /* BOTÕES DOS FILTROS */
+    .galeria-filtros {
+        gap: 9px;
+    }
+
+    .filtro-galeria {
+        font-size: 12px;
+        padding: 9px 13px;
+    }
+
+    /* MOSAICO */
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .galeria-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .galeria-item.grande {
+        grid-column: span 1;
+    }
+
+    .galeria-item img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .galeria-item figcaption {
+        font-size: 13px;
+    }
+
+    /* FRASE FINAL */
+    .galeria-final {
+        padding: 45px 6%;
+    }
+
+    .galeria-final h2 {
+        font-size: 29px;
+    }
+
+    .galeria-final p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .galeria-final a {
+        font-size: 13px;
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .lightbox img {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    .fechar-lightbox {
+        font-size: 35px;
+    }
+}
+
